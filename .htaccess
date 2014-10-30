@@ -1,0 +1,6 @@
+DirectoryIndex index.php 
+<FilesMatch "\.(gif|jpe?g|png)"> 
+   RewriteEngine On 
+   RewriteCond %{REQUEST_FILENAME} -f 
+   RewriteRule ^(.*)$ /watermark/watermark.php [T=application/x-httpd-php,L,QSA]
+</FilesMatch>
